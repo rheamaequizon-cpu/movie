@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Movie Layout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .movie-container {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+            align-items: center;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+        }
+
+        .movie-poster img {
+            width: 250px;
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .movie-details {
+            margin-left: 30px;
+        }
+
+        .movie-details a {
+            display: block;
+            margin: 8px 0;
+            color: blue;
+            text-decoration: none;
+        }
+
+        .movie-details a:hover {
+            text-decoration: underline;
+        }
+
+        .youtube-link img {
+            width: 20px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .movie-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .movie-details {
+                margin-left: 0;
+                margin-top: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>The 5 Best New Movies</h1>
+
+<!-- 1. Mickey 17 -->
+<div class="movie-container">
+    <div class="movie-poster">
+        <img src="https://m.media-amazon.com/images/M/MV5BZGQwYmEzMzktYzBmMy00NmVmLTkyYTUtOTYyZjliZDNhZGVkXkEyXkFqcGc@._V1_.jpg" alt="Mickey 17 Poster">
+    </div>
+
+    <div class="movie-details">
+        <h2>1. Mickey 17</h2>
+
+        <a href="https://www.imdb.com/title/tt12299608/" target="_blank">
+            https://www.imdb.com/title/tt12299608/" target=
+        </a>
+
+        <a href="https://www.youtube.com/results?search_query=Mickey+17+trailer" target="_blank" class="youtube-link">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg">
+            Mickey 17/Official Trailer
+        </a>
+    </div>
+</div>
+
+<!-- 2. Ad Vitam -->
+<div class="movie-container">
+    <div class="movie-poster">
+        <img src="https://upload.wikimedia.org/wikipedia/en/f/ff/Ad_Vitam_poster.jpg" alt="Ad Vitam Poster">
+    </div>
+
+    <div class="movie-details">
+        <h2>2. Ad Vitam</h2>
+
+        <a href="https://www.imdb.com/title/tt8548830/" target="_blank">
+            View on IMDb
+        </a>
+
+        <a href="https://www.youtube.com/results?search_query=Ad+Vitam+trailer" target="_blank" class="youtube-link">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg">
+            Watch Trailer on YouTube
+        </a>
+    </div>
+</div>
+
+<!-- 3. Cleaner -->
+<div class="movie-container">
+    <div class="movie-poster">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5f/Cleaner_2025_poster.jpg/250px-Cleaner_2025_poster.jpg" alt="Cleaner Poster">
+    </div>
+
+    <div class="movie-details">
+        <h2>3. Cleaner</h2>
+
+        <a href="https://www.imdb.com/title/tt0896798/" target="_blank">
+            View on IMDb
+        </a>
+
+        <a href="https://www.youtube.com/results?search_query=Cleaner+movie+trailer" target="_blank" class="youtube-link">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg">
+            Watch Trailer on YouTube
+        </a>
+    </div>
+</div>
+
+<!-- 4. Ash -->
+<div class="movie-container">
+    <div class="movie-poster">
+        <img src="https://m.media-amazon.com/images/M/MV5BOTYwZDE3ZDctOTc2Mi00MWIyLWFmMjctZTJmNzNmMjZkOTI0XkEyXkFqcGc@._V1_.jpg" alt="Ash Poster">
+    </div>
+
+    <div class="movie-details">
+        <h2>4. Ash</h2>
+
+        <a href="https://www.imdb.com/" target="_blank">
+            View on IMDb
+        </a>
+
+        <a href="https://www.youtube.com/results?search_query=Ash+movie+trailer" target="_blank" class="youtube-link">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg">
+            Watch Trailer on YouTube
+        </a>
+    </div>
+</div>
+
+<!-- 5. Piglet -->
+<div class="movie-container">
+    <div class="movie-poster">
+        <img src="https://m.media-amazon.com/images/M/MV5BMmM1MWRkYmEtMDU2YS00NDZiLTk2MDEtZjZmYjEyZGU4YjExXkEyXkFqcGc@._V1_QL75_UY281_CR6,0,190,281_.jpg" alt="Piglet Poster">
+    </div>
+
+    <div class="movie-details">
+        <h2>5. Piglet</h2>
+
+        <a href="https://www.imdb.com/" target="_blank">
+            View on IMDb
+        </a>
+
+        <a href="https://www.youtube.com/results?search_query=Piglet+movie+trailer" target="_blank" class="youtube-link">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg">
+            Watch Trailer on YouTube
+        </a>
+    </div>
+</div>
+
+</body>
+</html>
